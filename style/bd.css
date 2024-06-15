@@ -1,0 +1,161 @@
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background-color: rgb(227, 112, 210);
+            color: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #18181860;
+        }
+
+        /* Menu Toggle Button for Mobile */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-links li {
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .img {
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .img1 {
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+        }
+
+        .texto {
+            max-width: 800px;
+            margin: 20px 0;
+            text-align: justify;
+        }
+
+        .texto h1, .texto h2, .texto h5 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .texto p {
+            margin-bottom: 10px;
+        }
+
+        .texto ul {
+            list-style: none;
+            padding-left: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .texto li {
+            margin-bottom: 5px;
+        }
+
+        .texto1 {
+            text-align: justify;
+            max-width: 800px;
+        }
+
+        .botão {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #e73ec0;
+            color: white;
+            text-decoration: none;
+        }
+
+        .botão:hover {
+            background-color: #d02db0;
+        }
